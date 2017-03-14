@@ -2,6 +2,8 @@
 ### Creators: Jeffrey Gao, Raunak Bhojwani, Jinnan Ge, and Tong Xu.
 #### March 2017
 
+Watch the demo here: https://www.youtube.com/watch?v=rVxvFBpGOPk&t=3s
+
 Important note:
 
 One of the limitations of our current application is that it uses a free demo version of Kairos, as a proof of concept. Because of this, the number of API calls per minute to Kairos per app key is capped. This has the potential to lock up the calls to Kairos when multiple users test the application at the same time. As a solution, we provide a way for each user/grader to select their own name when enrolling images of their face as the user of the application in the PhotoActivity. Each grader's name has a different Kairos app id and app key associated with it that the application will use for all calls for Kairos. (The paid version of Kairos will fix this issue; unfortunately we're broke college students)
