@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">InYourFace</string>
+
+    <string name="photo_preference">User Profile</string>
+    <string name="photo_setting_title">Enroll User</string>
+    <string name="photo_setting_summary">Enroll a photo of the user</string>
+    <string name="authentication_preference">Security</string>
+    <string name="authentication_title">Photo Authentication</string>
+    <string name="authentication_summary">Toggle active photo authentication</string>
+    <string name="lock_title">Phone Lock</string>
+    <string name="lock_summary">Lock your phone on failed authentication</string>
+
+    <string name="demo_preference">Demo</string>
+    <string name="demo_setting_title">Kairos Demo</string>
+    <string name="demo_setting_summary">Demo the facial analysis features</string>
+
+    <string name="misc_pref">Misc.</string>
+    <string name="webpage_title">Webpage</string>
+    <string name="webpage_address">http://iyfandroidapp.weebly.com/</string>
+
+    <string name="username_prompt_text">Select your Username</string>
+    <string name="photo_prompt_text">Upload Your Picture</string>
+    <string name="change_pic_button">Change</string>
+
+    <string name="photo_name">photo.png</string>
+
+    <string name="shared_preference">my_shared_preferences</string>
+    <string name="user_name">user_name</string>
+
+    <!-- We implement a feature for swapping app keys for each grader/tester in order to address the issue
+     of limited requests to Kairos for our demo account access (60 requests/min, 1 million requests/month) -->
+    <string name="kairos_app_id">32cb0e82</string>
+    <string name="kairos_app_key">108aa772951775d1b79022941ea4b394</string>
+    <string name="kairos_app_id2">7a3306a0</string>
+    <string name="kairos_app_key2">60116fe97f24c0a6d0bee6b469009d80</string>
+    <string name="kairos_app_id3">5382f598</string>
+    <string name="kairos_app_key3">4ed0ab726d10be7e4bcaa85a7eddbce0</string>
+    <string name="kairos_app_id4">776f38a8</string>
+    <string name="kairos_app_key4">44e9f4856dee3eb3e8da618de37de177</string>
+    <string name="kairos_app_id5">8943fc0a</string>
+    <string name="kairos_app_key5">ba39975262e791c273d36b197f646029</string>
+
+    <string name="DeviceAdmin">Device Admin</string>
+    <string name="b">b</string>
+
+    <string name="setting_page_title">Setting</string>
+    <string name="analysis_page_title">Analysis</string>
+    <string name="open">open navigation drawer</string>
+    <string name="close">close navigation drawer</string>
+
+    <string name="analysis_pref">Analysis</string>
+    <string name="emotions_pref">Emotions/Attention Tracking</string>
+    <string name="emotions_pref_details">Toggle to activate emotions/attention level analysis</string>
+
+    <string name="analysis_app_prompt">Choose an app:</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_not_locked_text">Nothing should happen on this page, here for test purpose</string>
+    <string name="activity_dialog_title">Forgot your Pincode?</string>
+    <string name="activity_dialog_accept">OK</string>
+    <string name="activity_dialog_decline">CANCEL</string>
+    <string name="activity_dialog_content">Tap \'OK\' to log out, when you log back in you\'ll be able to create a new Pincode.\n\nIf you remember your Pincode, tap \'Cancel\' to go back.</string>
+    <string name="activity_appcompat_message">I am a PinCompatActivity!</string>
+
+    <string name="clear_all_button">Clear All</string>
+
+    <!--<string name=""></string>-->
+    <!--<string name=""></string>-->
+    <!--<string name=""></string>-->
+    <!--<string name=""></string>-->
+</resources>

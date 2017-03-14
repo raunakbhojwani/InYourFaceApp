@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference android:title="Start Running!"
+        android:key="start_button"
+        android:summary="Initiate the background service"/>
+
+    <Preference android:title="Stop Running"
+        android:key="stop_button"
+        android:summary="Stop the background service"/>
+
+    <PreferenceCategory
+        android:title="@string/photo_preference">
+
+        <PreferenceScreen
+            android:key="set_photo"
+            android:title="@string/photo_setting_title"
+            android:summary="@string/photo_setting_summary">
+
+            <intent android:action="android.intent.action.PhotoActivity"/>
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Customize">
+
+        <ListPreference
+            android:key="interval_preference"
+            android:title="Interval Preference"
+            android:summary="Select time between snapshots"
+            android:entries="@array/entries_intervals"
+            android:entryValues="@array/entries_intervals"
+            android:defaultValue="10 sec"
+            android:dialogTitle="Interval Preference"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/authentication_preference">
+
+    <SwitchPreference
+        android:key="auth_preference"
+        android:title="@string/authentication_title"
+        android:defaultValue="false"
+        android:summary="@string/authentication_summary"/>
+
+    <CheckBoxPreference
+        android:key="lock_preference"
+        android:title="@string/lock_title"
+        android:defaultValue="false"
+        android:summary="@string/lock_summary"
+        android:dependency="auth_preference"/>
+
+        <!--<ListPreference-->
+            <!--android:key="list_preference"-->
+            <!--android:title="@string/title_unit_pref"-->
+            <!--android:summary="@string/summary_unit_pref"-->
+            <!--android:entries="@array/entries_list_preference"-->
+            <!--android:entryValues="@array/entryvalues_list_preference"-->
+            <!--android:dialogTitle="@string/dialog_title_unit_pref" />-->
+
+        <!--<EditTextPreference-->
+            <!--android:key="edittext_preference"-->
+            <!--android:title="@string/title_comments"-->
+            <!--android:summary="@string/summary_comments"-->
+            <!--android:dialogTitle="@string/dialog_title_comments" />-->
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/analysis_pref">
+
+        <SwitchPreference
+            android:key="emotions_pref"
+            android:title="@string/emotions_pref"
+            android:defaultValue="true"
+            android:summary="@string/emotions_pref_details"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/demo_preference">
+
+        <PreferenceScreen
+            android:key="launch_demo"
+            android:title="@string/demo_setting_title"
+            android:summary="@string/demo_setting_summary">
+
+            <intent android:action="android.intent.action.DemoActivity"/>
+        </PreferenceScreen>
+
+        <SwitchPreference
+            android:key="toast_pref"
+            android:title="Show Toasts"
+            android:defaultValue="false"
+            android:summary="Display toasts from the background service for testing"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
